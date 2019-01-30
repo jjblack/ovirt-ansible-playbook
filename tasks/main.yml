@@ -1,0 +1,10 @@
+---
+- name: update packages
+  yum:
+    name: '*'
+    state: latest
+
+- name: install oVirt
+  yum:
+    name: ovirt-engine
+    state: latest
